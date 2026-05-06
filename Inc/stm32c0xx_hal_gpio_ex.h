@@ -195,6 +195,9 @@ extern "C" {
   */
 #define GPIO_AF7_EVENTOUT      ((uint8_t)0x07)  /*!< EVENTOUT Alternate Function mapping */
 #define GPIO_AF7_I2C1          ((uint8_t)0x07)  /*!< I2C1 Alternate Function mapping */
+#if defined(USART3)
+#define GPIO_AF7_USART3        ((uint8_t)0x07)  /*!< USART3 Alternate Function mapping */
+#endif /* USART3 */
 /**
   * @brief   AF 8 selection
   */
