@@ -1102,7 +1102,7 @@ __STATIC_INLINE void LL_RTC_TIME_Config(RTC_TypeDef *RTCx, uint32_t Format12_24,
   */
 __STATIC_INLINE uint32_t LL_RTC_TIME_Get(const RTC_TypeDef *RTCx)
 {
-  register uint32_t temp;
+  uint32_t temp;
 
   temp = READ_BIT(RTCx->TR, (RTC_TR_HT | RTC_TR_HU | RTC_TR_MNT | RTC_TR_MNU | RTC_TR_ST | RTC_TR_SU));
   return (uint32_t)((((((temp & RTC_TR_HT) >> RTC_TR_HT_Pos) << 4U) | \
