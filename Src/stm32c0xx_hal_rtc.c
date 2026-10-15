@@ -1535,7 +1535,7 @@ uint8_t RTC_ByteToBcd2(uint8_t Value)
   while (Param >= 10U)
   {
     bcdhigh++;
-    Param -= 10U;
+    Param -= (uint8_t)10;
   }
 
   return ((uint8_t)(bcdhigh << 4U) | Param);
